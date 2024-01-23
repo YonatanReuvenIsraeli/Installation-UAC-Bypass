@@ -3,4 +3,4 @@
 Bypasses User Account Control when trying to install a program on Windows.
 ## Notes:
 **1.** By entering "Your Windows Directory"\regedit.exe it can allow a non-administrator to view the Windows Registry Editor (you won't be able to edit the Windows Registry Editor though).  
-**2.** Environment variables cannot be entered into the input because the batch file takes the text in the input literally.
+**2.** Environment variables cannot be entered into the input in the batch file because the batch file takes the text in the input literally.
