@@ -15,7 +15,7 @@ goto :Disclaimer
 :Start
 set __COMPAT_LAYER=RunAsInvoker
 echo.
-set /p Program="What is the path of the program are you trying to install? "
+set /p Program="What is the full path of the program are you trying to install? Do not enclose the full path in single or double quotation marks. "
 start "" "%Program%"
 if errorlevel 1 goto :Start
 goto :Exit
