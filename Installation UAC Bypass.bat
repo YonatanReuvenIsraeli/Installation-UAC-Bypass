@@ -14,11 +14,11 @@ goto :Disclaimer
 
 :Start
 echo.
+set /p Program="What is the full path of the program are you trying to install? "
+echo.
 echo Make sure to change the installation folder to %USERPROFILE%\AppData\Local. Press any key to start the installation process.
 pause
 set __COMPAT_LAYER=RunAsInvoker
-echo.
-set /p Program="What is the full path of the program are you trying to install? "
 start "" "%Program%"
 if errorlevel 1 goto :Start
 goto :Exit
