@@ -6,4 +6,5 @@ Bypasses User Account Control when trying to install a program on Windows.
 ## Notes:
 **1.** By entering **"Your Windows Directory"\regedit.exe** it can allow a non-administrator to view the Windows Registry (you won't be able to edit the Windows Registry though).  
 **2.** This will not work to bypass User Account Control for anything else other than installing a program.  
-**3.** You can only install a program useing this batch file for the user you are logged in to.
+**3.** You can only install a program useing this batch file for the user you are logged in to.  
+**4.** When entering the path do not use quotes or double quotes if the installation file has a space in its name.
