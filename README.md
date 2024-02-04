@@ -8,4 +8,4 @@ Bypasses User Account Control when trying to install a program on Windows.
 **2.** This will not work to bypass User Account Control for anything else other than installing a program.  
 **3.** You can only install a program useing this batch file for the user you are logged in to.  
 **4.** When entering the path do not use quotes or double quotes if the installation file has a space in its name.  
-**5.** This will not work for every program examples include but are not limited to, programs that don't let you change the installation folder.
+**5.** This will not work for every program. Examples include but are not limited to, programs that don't let you change the installation folder.
