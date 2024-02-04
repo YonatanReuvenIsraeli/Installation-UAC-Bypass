@@ -16,7 +16,7 @@ goto :Disclaimer
 echo.
 set /p Program="What is the full path of the program are you trying to install? "
 echo.
-echo Make sure to change the installation folder to %USERPROFILE%\AppData\Local. Press any key to start the installation process.
+echo Make sure to change the installation folder to %USERPROFILE%\AppData\Local. You can add a start menu shortcut of your program to %AppData%\Microsoft\Windows\Start Menu\Programs. Press any key to start the installation process.
 pause
 set __COMPAT_LAYER=RunAsInvoker
 start "" "%Program%"
