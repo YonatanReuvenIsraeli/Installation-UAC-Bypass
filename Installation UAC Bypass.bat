@@ -15,9 +15,20 @@ goto :Disclaimer
 :Start
 echo.
 set /p Program="What is the full path of the program are you trying to install? "
+goto :Sure
+
+:Sure
+echo.
+set /p Sure="Are you sure %Program% is the full path to the program you want to install? (Yes/No) "
+if /i "%Sure%"=="Yes" goto :Run
+if /i "%Sure%"=="No" goto :Start
+echo Invalid Syntax!
+goto :SureNTFS
+
+:Run
 echo.
 echo Make sure to change the installation folder to %USERPROFILE%\AppData\Local. You can add a start menu shortcut of your program to %AppData%\Microsoft\Windows\Start Menu\Programs if you want. Press any key to start the installation process.
-pause
+pause >nul
 set __COMPAT_LAYER=RunAsInvoker
 start "" "%Program%"
 if errorlevel 1 goto :Start
