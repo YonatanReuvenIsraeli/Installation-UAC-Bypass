@@ -6,6 +6,7 @@ goto Disclaimer
 
 :Disclaimer
 echo.
+set Disclaimer=
 set /p Disclaimer="Do you agree to the Disclaimer? (Yes/No) "
 if /i "%Disclaimer%"=="Yes" goto Start
 if /i "%Disclaimer%"=="No" goto Exit
@@ -14,11 +15,13 @@ goto Disclaimer
 
 :Start
 echo.
+set Program=
 set /p Program="What is the full path of the program are you trying to install? "
 goto Sure
 
 :Sure
 echo.
+set Sure=
 set /p Sure="Are you sure %Program% is the full path to the program you want to install? (Yes/No) "
 if /i "%Sure%"=="Yes" goto Run
 if /i "%Sure%"=="No" goto Start
