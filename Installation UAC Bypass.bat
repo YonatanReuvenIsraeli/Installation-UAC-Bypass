@@ -1,7 +1,7 @@
 @echo off
 setlocal
 title Installation UAC Bypass
-Installation UAC Bypass v1.0.1
+Installation UAC Bypass v1.0.2
 echo.
 echo READ DISCLAIMER ^-^-^> THIS IS FOR EDUCATIONAL PURPOSES ONLY! DO NOT USE THIS ON SOMEONE ELSES PC WITHOUT THEIR EXPLICIT PERMISSION! THIS IS A HACK! CONTINUE AT YOUR OWN RISK! WE HOLD NO RESPONSIBILITY FOR ANYTHING THAT HAPPEND, IS HAPPENING, AND/OR WILL HAPPEN BECAUSE OF THIS BATCH FILE!
 goto Disclaimer
@@ -32,7 +32,7 @@ goto SureNTFS
 
 :Run
 echo.
-echo Make sure to change the installation folder to %USERPROFILE%\AppData\Local. You can add a start menu shortcut of your program to %AppData%\Microsoft\Windows\Start Menu\Programs if you want. Press any key to start the installation process.
+echo Make sure to change the installation folder to "%USERPROFILE%\AppData\Local". You can add a start menu shortcut of your program to "%APPDATA%\Microsoft\Windows\Start Menu\Programs" if you want. Press any key to start the installation process.
 pause >nul
 set __COMPAT_LAYER=RunAsInvoker
 start "" "%Program%"
