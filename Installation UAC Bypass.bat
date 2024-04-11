@@ -1,7 +1,7 @@
 @echo off
 setlocal
 title Installation UAC Bypass
-Installation UAC Bypass v1.0.2
+Installation UAC Bypass v1.0.3
 echo.
 echo READ DISCLAIMER ^-^-^> THIS IS FOR EDUCATIONAL PURPOSES ONLY! DO NOT USE THIS ON SOMEONE ELSES PC WITHOUT THEIR EXPLICIT PERMISSION! THIS IS A HACK! CONTINUE AT YOUR OWN RISK! WE HOLD NO RESPONSIBILITY FOR ANYTHING THAT HAPPEND, IS HAPPENING, AND/OR WILL HAPPEN BECAUSE OF THIS BATCH FILE!
 goto Disclaimer
@@ -28,7 +28,7 @@ set /p Sure="Are you sure "%Program%" is the full path to the program you want t
 if /i "%Sure%"=="Yes" goto Run
 if /i "%Sure%"=="No" goto Start
 echo Invalid Syntax!
-goto SureNTFS
+goto Sure
 
 :Run
 echo.
