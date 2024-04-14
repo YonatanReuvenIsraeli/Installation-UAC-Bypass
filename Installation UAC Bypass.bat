@@ -1,7 +1,7 @@
 @echo off
 setlocal
 title Installation UAC Bypass
-Installation UAC Bypass v1.0.4
+Installation UAC Bypass v1.0.5
 echo.
 echo READ DISCLAIMER ^-^-^> THIS IS FOR EDUCATIONAL PURPOSES ONLY! DO NOT USE THIS ON SOMEONE ELSES PC WITHOUT THEIR EXPLICIT PERMISSION! THIS IS A HACK! CONTINUE AT YOUR OWN RISK! WE HOLD NO RESPONSIBILITY FOR ANYTHING THAT HAPPEND, IS HAPPENING, AND/OR WILL HAPPEN BECAUSE OF THIS BATCH FILE!
 goto Disclaimer
@@ -36,7 +36,7 @@ echo Make sure to change the installation folder to "%USERPROFILE%\AppData\Local
 pause > nul
 set __COMPAT_LAYER=RunAsInvoker
 start "" "%Program%"
-if not errorlevel 0 goto Start
+if not "%errorlevel%"=="0" goto Start
 goto Exit
 
 :Exit
