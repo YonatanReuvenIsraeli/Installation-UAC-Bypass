@@ -2,7 +2,7 @@
 setlocal
 title Installation UAC Bypass
 echo Program Name: Installation UAC Bypass
-echo Version: 1.1.0
+echo Version: 1.1.1
 echo Developer: @YonatanReuvenIsraeli
 echo Website: https://www.yonatanreuvenisraeli.dev
 echo License: GNU General Public License v3.0
@@ -37,7 +37,7 @@ goto Sure
 :Run
 echo.
 echo Make sure to change the installation folder to "%USERPROFILE%\AppData\Local". You can add a start menu shortcut of your program to "%APPDATA%\Microsoft\Windows\Start Menu\Programs" if you want. Press any key to start the installation process.
-pause > nul
+pause > nul 2>&1
 set __COMPAT_LAYER=RunAsInvoker
 start "" "%Program%"
 if not "%errorlevel%"=="0" goto Start
