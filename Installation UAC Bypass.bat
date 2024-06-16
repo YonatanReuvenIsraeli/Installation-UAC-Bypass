@@ -2,7 +2,7 @@
 setlocal
 title Installation UAC Bypass
 echo Program Name: Installation UAC Bypass
-echo Version: 1.1.2
+echo Version: 1.1.3
 echo Developer: @YonatanReuvenIsraeli
 echo Website: https://www.yonatanreuvenisraeli.dev
 echo License: GNU General Public License v3.0
@@ -16,7 +16,7 @@ set Disclaimer=
 set /p Disclaimer="Do you agree to the Disclaimer? (Yes/No) "
 if /i "%Disclaimer%"=="Yes" goto Start
 if /i "%Disclaimer%"=="No" goto Exit
-echo Invalid Syntax!
+echo Invalid syntax!
 goto Disclaimer
 
 :Start
@@ -31,7 +31,7 @@ set Sure=
 set /p Sure="Are you sure "%Program%" is the full path to the program you want to install? (Yes/No) "
 if /i "%Sure%"=="Yes" goto Run
 if /i "%Sure%"=="No" goto Start
-echo Invalid Syntax!
+echo Invalid syntax!
 goto Sure
 
 :Run
