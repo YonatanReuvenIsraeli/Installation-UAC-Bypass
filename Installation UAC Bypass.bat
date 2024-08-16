@@ -2,7 +2,7 @@
 setlocal
 title Installation UAC Bypass
 echo Program Name: Installation UAC Bypass
-echo Version: 1.1.4
+echo Version: 1.1.5
 echo Developer: @YonatanReuvenIsraeli
 echo Website: https://www.yonatanreuvenisraeli.dev
 echo License: GNU General Public License v3.0
@@ -40,8 +40,12 @@ echo Make sure to change the installation folder to "%USERPROFILE%\AppData\Local
 pause > nul 2>&1
 set __COMPAT_LAYER=RunAsInvoker
 start "" "%Program%"
-if not "%errorlevel%"=="0" goto "Start"
+if not "%errorlevel%"=="0" goto "Error"
 goto "Exit"
+
+:"Error"
+echo There has been an error!  you can try again.
+goto "Start"
 
 :"Exit"
 endlocal
