@@ -1,8 +1,8 @@
 @echo off
-setlocal
 title Installation UAC Bypass
+setlocal
 echo Program Name: Installation UAC Bypass
-echo Version: 1.1.11
+echo Version: 1.1.12
 echo License: GNU General Public License v3.0
 echo Developer: @YonatanReuvenIsraeli
 echo GitHub: https://github.com/YonatanReuvenIsraeli
