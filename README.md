@@ -1,4 +1,4 @@
-# Installation UAC Bypass v2.0.2
+# Installation UAC Bypass v2.0.3
 
 ## This batch file, named "Installation UAC Bypass.bat", is designed for educational purposes only to demonstrate potential vulnerabilities in Windows operating systems. It should only be used in controlled testing environments with explicit authorization.
 Bypasses User Account Control when trying to install a program on Windows.
