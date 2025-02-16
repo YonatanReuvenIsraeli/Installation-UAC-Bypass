@@ -2,7 +2,7 @@
 title Installation UAC Bypass
 setlocal
 echo Program Name: Installation UAC Bypass
-echo Version: 1.1.12
+echo Version: 1.1.13
 echo License: GNU General Public License v3.0
 echo Developer: @YonatanReuvenIsraeli
 echo GitHub: https://github.com/YonatanReuvenIsraeli
@@ -53,7 +53,7 @@ if not "%errorlevel%"=="0" goto "Error"
 goto "Exit"
 
 :"Error"
-echo There has been an error!  you can try again.
+echo There has been an error! You can try again.
 goto "Start"
 
 :"Exit"
