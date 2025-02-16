@@ -2,7 +2,7 @@
 title Installation UAC Bypass
 setlocal
 echo Program Name: Installation UAC Bypass
-echo Version: 2.0.0
+echo Version: 2.0.1
 echo License: GNU General Public License v3.0
 echo Developer: @YonatanReuvenIsraeli
 echo GitHub: https://github.com/YonatanReuvenIsraeli
@@ -53,17 +53,9 @@ goto "Start"
 
 :"Run"
 echo.
-echo Make sure to change the installation folder to "%USERPROFILE%\AppData\Local". You can add a start menu shortcut of your program to "%APPDATA%\Microsoft\Windows\Start Menu\Programs" if you want. Press any key to start the installation process.
+echo Make sure to change the installation folder to "%USERPROFILE%\AppData\Local". You can add a start menu shortcut of your program to "%APPDATA%\Microsoft\Windows\Start Menu\Programs" if you want. If "%Program%" dows not open, then "%Program%" cannot be installed without administrtor privlages. Press any key to start the installation process.
 pause > nul 2>&1
 set __COMPAT_LAYER=RunAsInvoker
-start "" "%Program%"
-if not "%errorlevel%"=="0" goto "Error"
-goto "Exit"
-
-:"Error"
-echo There has been an error! You can try again.
-goto "Start"
-
-:"Exit"
+"%Program%"
 endlocal
 exit
