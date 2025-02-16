@@ -2,7 +2,7 @@
 title Installation UAC Bypass
 setlocal
 echo Program Name: Installation UAC Bypass
-echo Version: 1.1.13
+echo Version: 2.0.0
 echo License: GNU General Public License v3.0
 echo Developer: @YonatanReuvenIsraeli
 echo GitHub: https://github.com/YonatanReuvenIsraeli
@@ -38,10 +38,18 @@ goto "Sure"
 echo.
 set Sure=
 set /p Sure="Are you sure "%Program%" is the full path to the program you want to install? (Yes/No) "
-if /i "%Sure%"=="Yes" goto "Run"
+if /i "%Sure%"=="Yes" goto "CheckExist"
 if /i "%Sure%"=="No" goto "Start"
 echo Invalid syntax!
 goto "Sure"
+
+:"CheckExist"
+if not exist "%Program%" goto "NotExist"
+goto "Run"
+
+:"NotExist"
+echo "%Program%" does not exist. Please try again.
+goto "Start"
 
 :"Run"
 echo.
