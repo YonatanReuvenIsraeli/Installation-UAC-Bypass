@@ -2,7 +2,7 @@
 title Installation UAC Bypass
 setlocal
 echo Program Name: Installation UAC Bypass
-echo Version: 2.0.5
+echo Version: 2.0.6
 echo License: GNU General Public License v3.0
 echo Developer: @YonatanReuvenIsraeli
 echo GitHub: https://github.com/YonatanReuvenIsraeli
@@ -59,4 +59,3 @@ set __COMPAT_LAYER=RunAsInvoker
 start "" "%Program%"
 endlocal
 exit
-
